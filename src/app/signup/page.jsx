@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import axios from 'axios';
+import {TextInput} from "flowbite-react"
 
 const Signup = () => {
     const [user, setUser]=useState({name:"",email:"",password:""})
@@ -11,7 +12,7 @@ const Signup = () => {
         
     }
   return (
-    <div className="justify-center">
+    <div className="flex flex-col justify-center items-center">
       <form
         autoComplete="off"
         className="w-full max-w-[600px] p-10 bg-white rounded-lg shadow"
